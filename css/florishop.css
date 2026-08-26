@@ -1,0 +1,416 @@
+/* ==========================================
+   PROJECT DETAIL PAGE FLORISHOP
+   HERO / FEATURED PROJECT
+========================================== */
+
+.section-number {
+  display: block;
+  margin-bottom: .75rem;
+  color: var(--color-florisoft);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+/* ==========================================
+   SECTION 00
+   PROFESSIONAL HERO
+========================================== */
+
+.professional-hero {
+  width: min(var(--container-width), 90%);
+  margin: 6rem auto 0;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+/* Heading */
+.professional-hero .section-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+/* Titel */
+.professional-hero h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-white);
+  margin: 0;
+}
+
+
+/* Introductie */
+.professional-hero .section-intro {
+  max-width: 46rem;
+  margin: 2rem auto 0;
+  line-height: 1.9;
+  color: rgba(255,255,255,.8);
+}
+
+
+/* ==========================================
+   FEATURED PROJECT
+========================================== */
+
+.professional-featured {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  align-items: center;
+  gap: 5rem;
+  width: min(var(--container-width), 90%);
+  margin: 4rem auto 12rem;
+}
+
+
+/* Grote afbeelding */
+.featured-image {
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--border-radius-xl);
+}
+
+
+/* Afbeelding */
+.featured-image img {
+  width: 100%;
+  display: block;
+}
+
+
+/* Rechter content */
+.featured-content {
+  max-width: 32rem;
+}
+
+
+/* Project label */
+
+.project-label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--color-florisoft);
+
+}
+
+
+/* Titel */
+
+.featured-content h2 {
+  /* font-size: clamp(2.5rem, 4vw, 4rem);
+  line-height: 1;
+  color: var(--color-white);
+  margin-bottom: 1.5rem; */
+      /* font-family: "Sora", sans-serif; */
+    font-size: clamp(3rem, 6vw, 5rem);
+    font-weight: 700;
+    line-height: 1;
+    color: var(--color-white);
+    margin-bottom: 3rem;
+
+}
+
+
+/* Beschrijving */
+
+.featured-content p {
+  line-height: 1.8;
+  color: rgba(255,255,255,.8);
+  margin-bottom: 2rem;
+
+}
+
+
+/* Project informatie / Pills */
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .7rem;
+
+}
+
+
+/* Tags */
+.project-meta span {
+  padding: .5rem .8rem;
+  /* border: 1px solid rgba(255,255,255,.3); */
+  border: 1px solid #b8ff3b;
+  border-radius: var(--border-radius-full);
+  font-size: .75rem;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+/* .project-meta span:hover{
+  padding: .5rem .8rem;
+  border: 1px solid #8D3BFF;
+  border-radius: var(--border-radius-full);
+  font-size: .75rem;
+  font-weight: 600;
+  color: var(--color-florisoft);
+} */
+
+/* ==========================================
+   PROJECT INFORMATION
+========================================== */
+
+.professional-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  width: min(var(--container-width), 90%);
+  margin: 0 auto;
+  padding: 7rem 0;
+  border-top: 1px solid rgba(255,255,255,.15);
+  border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+
+/* Informatie blok */
+
+.info-block {
+  max-width: 38rem;
+}
+
+
+/* Label */
+.info-label {
+  display: block;
+  margin-bottom: 1.2rem;
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--color-florisoft);
+}
+
+
+/* Titel */
+
+.info-block h2 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1;
+  color: var(--color-white);
+  margin-bottom: 1.2rem;
+  font-weight: 700px;
+}
+
+
+/* Tekst */
+.info-block p {
+  line-height: 1.8;
+  color: rgba(255,255,255,.8);
+}
+
+
+
+
+/* ==========================================
+   SECTION 02
+   PROJECT SCOPE
+========================================== */
+
+.project-scope {
+  width: min(var(--container-width), 90%);
+  margin: 10rem auto;
+}
+
+
+/* Intro tekst */
+
+.project-scope .section-intro {
+  max-width: 42rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  line-height: 1.9;
+  color: rgba(255,255,255,.8);
+}
+
+
+/* Scope grid */
+
+.scope-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid rgba(255,255,255,.15);
+}
+
+
+/* Scope item */
+
+.scope-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid rgba(255,255,255,.15);
+
+}
+
+
+/* Nummer */
+.scope-item span {
+  font-size: .75rem;
+  font-weight: 700;
+  /* color: rgba(255,255,255,.5); */
+  color: var(--color-accent);
+}
+
+
+/* Titel */
+
+.scope-item h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+
+/* ==========================================
+   SECTION 03 / 04
+   WIREFRAMES & UI DESIGN
+========================================== */
+
+.professional-showcase {
+  width: min(var(--container-width), 90%);
+  margin: 10rem auto;
+}
+
+
+/* Intro tekst */
+
+.professional-showcase .section-intro {
+  max-width: 42rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  line-height: 1.9;
+  color: rgba(255,255,255,.8);
+}
+
+
+/* Showcase grid */
+.showcase-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+
+/* Showcase afbeelding */
+.showcase-item {
+  overflow: hidden;
+  border-radius: var(--border-radius-xl);
+}
+
+
+/* Groot item */
+
+.showcase-item.large {
+  grid-column: 1 / 1;
+}
+
+
+/* Afbeelding */
+
+.showcase-item img {
+  width: 100%;
+  display: block;
+  transition: transform .5s ease;
+
+}
+
+
+/* Hover */
+
+.showcase-item:hover img {
+  transform: scale(1.02);
+}
+
+
+/* ==========================================
+   SECTION 05
+   DELIVERY / OPLEVERING
+========================================== */
+
+.professional-result {
+  width: min(var(--container-width), 90%);
+  margin: 10rem auto;
+}
+
+
+/* Intro */
+
+.professional-result .section-intro {
+  max-width: 44rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  line-height: 1.9;
+  color: rgba(255,255,255,.8);
+}
+
+
+/* Resultaat afbeelding */
+
+.result-image {
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--border-radius-xl);
+}
+
+
+/* Afbeelding */
+
+.result-image img {
+  width: 100%;
+  display: block;
+border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+
+/* ==========================================
+   SECTION 06
+   FINAL RESULT
+========================================== */
+
+.professional-final {
+  width: min(var(--container-width), 90%);
+  margin: 10rem auto 12rem;
+}
+
+
+/* Intro */
+
+.professional-final .section-intro {
+  max-width: 44rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  line-height: 1.9;
+  color: rgba(255,255,255,.8);
+}
+
+
+/* Final afbeelding */
+
+.final-project-image {
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--border-radius-xl);
+}
+
+
+/* Afbeelding */
+
+.final-project-image img {
+  width: 100%;
+  display: block;
+}

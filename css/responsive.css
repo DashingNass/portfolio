@@ -1,0 +1,1262 @@
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+
+/* ==========================================
+   TABLET
+   1024px and below
+========================================== */
+
+@media (max-width: 1024px) {
+
+  /* ==========================================
+     HEADER
+  ========================================== */
+
+  header {
+    width: calc(100% - 3rem);
+    padding: 1.5rem;
+  }
+
+  .logo {
+    left: 1.5rem;
+  }
+
+  .navigation a {
+    padding: 0.7rem 1.1rem;
+    font-size: 0.75rem;
+  }
+
+
+  /* ==========================================
+     HERO
+  ========================================== */
+
+  .hero {
+    height: 100vh;
+  }
+
+
+  /* ==========================================
+     PANEL CONTENT
+  ========================================== */
+
+  .panel-content {
+    left: 1.5rem;
+    right: 1.5rem;
+    bottom: 1.5rem;
+  }
+
+  .panel-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .panel-content p {
+    font-size: 0.85rem;
+  }
+
+
+  /* ==========================================
+     HOMEPAGE PANELS
+     TEXT ALWAYS VISIBLE
+  ========================================== */
+
+  .hero .panel {
+    position: relative;
+  }
+
+  .hero .panel .panel-content {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    pointer-events: auto;
+  }
+
+  .hero .panel .panel-overlay {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  /* Prevent touch devices from triggering
+     desktop hover behaviour */
+
+  .hero .panel:hover .panel-content {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+  }
+
+  .hero .panel:hover .panel-overlay {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+}
+
+
+/* ==========================================
+   MOBILE
+   768px and below
+========================================== */
+
+@media (max-width: 768px) {
+
+  /* ==========================================
+     HEADER
+  ========================================== */
+
+  header {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    top: 0.75rem;
+  }
+
+
+  /* Logo */
+
+  .logo {
+    left: 1.25rem;
+    font-size: 1.2rem;
+  }
+
+
+  /* Navigation */
+
+  .navigation {
+    left: auto;
+    right: 1.25rem;
+    transform: none;
+    padding: 0.3rem;
+  }
+
+  .navigation ul {
+    gap: 0.15rem;
+  }
+
+  .navigation a {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.65rem;
+    letter-spacing: 0.06em;
+  }
+
+
+  /* ==========================================
+     HOMEPAGE HERO
+  ========================================== */
+
+  .hero {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+
+  /* ==========================================
+     HOMEPAGE PANELS
+  ========================================== */
+
+  .panel {
+    width: 100%;
+    height: 420px;
+    flex: none;
+  }
+
+
+  /* ==========================================
+     PANEL CONTENT
+  ========================================== */
+
+  .panel-content {
+    left: 1.5rem;
+    right: 1.5rem;
+    bottom: 1.5rem;
+  }
+
+  .panel-content h2 {
+    font-size: 2rem;
+  }
+
+  .panel-content p {
+    font-size: 0.9rem;
+    text-align: left;
+    max-width: 34ch;
+  }
+
+
+  /* ==========================================
+     CHARACTER POSITIONS
+  ========================================== */
+
+  .florisoft img {
+    object-position: center 20%;
+  }
+
+  .grid img {
+    object-position: center 30%;
+  }
+
+  .interface img {
+    object-position: center 30%;
+  }
+
+  .visual-interface img {
+    object-position: center 30%;
+  }
+
+  .happy-chef img {
+    object-position: center 30%;
+  }
+
+  .about-me img {
+    object-position: center 10%;
+  }
+
+
+  /* ==========================================
+     PROJECT HERO — BUTTON
+  ========================================== */
+
+  .project-info > .project-button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+  }
+
+
+  /* ==========================================
+     ABOUT ME
+  ========================================== */
+
+  .about-page {
+    flex-direction: column;
+    width: min(90%, 40rem);
+    margin: 7rem auto 4rem;
+    height: auto;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .about-character {
+    width: 100%;
+    height: 48vh;
+    max-height: 520px;
+    flex-shrink: 0;
+  }
+
+  .about-character img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+  }
+
+  .about-content {
+    width: 100%;
+    max-width: 38rem;
+  }
+
+  .about-content h1 {
+    font-size: clamp(3rem, 9vw, 4.5rem);
+    margin-bottom: 2.5rem;
+  }
+
+  .about-category {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .about-section {
+    margin-bottom: 2rem;
+  }
+
+  .about-section h2 {
+    font-size: 0.9rem;
+    margin-bottom: 0.65rem;
+  }
+
+  .about-section p {
+    font-size: 1rem;
+    line-height: 1.75;
+    max-width: none;
+  }
+
+  .about-buttons {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+
+  /* ==========================================
+     CONTACT
+  ========================================== */
+
+  .contact-page {
+    width: calc(100% - 2rem);
+    height: calc(100vh - 7rem);
+    margin: 7rem auto 3rem;
+  }
+
+  .contact-intro {
+    width: 100%;
+    max-width: 40rem;
+  }
+
+  .contact-category {
+    margin-bottom: 1.25rem;
+    font-size: 0.75rem;
+  }
+
+  .contact-intro h1 {
+    margin-bottom: 2rem;
+    font-size: clamp(4.5rem, 15vw, 8rem);
+    line-height: 0.85;
+  }
+
+  .contact-intro p {
+    max-width: 35rem;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .contact-email {
+    margin-top: 1.5rem;
+    padding: 0.85rem 1.5rem;
+    font-size: 0.85rem;
+  }
+
+
+  /* ==========================================
+     HAPPY CHEF — HERO
+  ========================================== */
+
+  .project-hero {
+    flex-direction: column;
+    width: min(90%, 40rem);
+    margin: 7rem auto 4rem;
+    height: auto;
+    gap: 2rem;
+    align-items: stretch;
+  }
+
+  .project-info {
+    width: 100%;
+  }
+
+  .project-info h1 {
+    font-size: clamp(3rem, 10vw, 5rem);
+    margin-bottom: 2rem;
+  }
+
+  .project-number {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .project-about h2 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .project-about p {
+    max-width: none;
+    font-size: 1rem;
+    line-height: 1.75;
+    margin-bottom: 2rem;
+  }
+
+  .project-image {
+    width: 100%;
+    max-width: 420px;
+    aspect-ratio: 3 / 4;
+    align-self: center;
+  }
+
+
+  /* ==========================================
+     HAPPY CHEF — SECTION 01
+     CHALLENGE
+  ========================================== */
+
+  .challenge {
+    flex-direction: column;
+    width: min(90%, 40rem);
+    margin: 6rem auto;
+    gap: 3rem;
+    align-items: stretch;
+  }
+
+  .challenge-image {
+    width: 100%;
+    max-width: 420px;
+    aspect-ratio: 1 / 1;
+    align-self: center;
+  }
+
+  .challenge-content {
+    max-width: none;
+    width: 100%;
+  }
+
+  .challenge-content p {
+    max-width: none;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .challenge .section-heading {
+    margin-bottom: 1.5rem;
+  }
+
+  .challenge .section-heading h2 {
+    font-size: clamp(3rem, 10vw, 5rem);
+    margin-bottom: 2rem;
+  }
+
+
+  /* ==========================================
+     HAPPY CHEF — SECTION 02
+     DESIGN PROCESS
+  ========================================== */
+
+  .design-process {
+    width: min(90%, 40rem);
+    margin: 6rem auto;
+  }
+
+  .design-process .section-heading {
+    margin-bottom: 2.5rem;
+  }
+
+  .design-process .section-heading h2 {
+    font-size: clamp(3rem, 10vw, 5rem);
+    margin-bottom: 2rem;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .process-card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 1rem;
+    align-items: center;
+  }
+
+  .process-icon {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 1.8rem;
+    margin: 0;
+  }
+
+  .process-card h3 {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .process-card p {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    margin: 1rem 0 0;
+    max-width: none;
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+
+  .process-divider {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    width: 100%;
+    height: 2px;
+    margin: 1.5rem 0 0;
+  }
+
+
+  /* ==========================================
+     HAPPY CHEF — SECTION 03
+     WIREFRAMES
+  ========================================== */
+
+  .wireframes {
+    flex-direction: column;
+    width: min(90%, 40rem);
+    margin: 6rem auto;
+    gap: 3rem;
+    align-items: stretch;
+  }
+
+  .wireframes-content {
+    max-width: none;
+    width: 100%;
+  }
+
+  .wireframes .section-heading {
+    margin-bottom: 1.5rem;
+  }
+
+  .wireframes .section-heading h2 {
+    font-size: clamp(3rem, 10vw, 5rem);
+    margin-bottom: 2rem;
+  }
+
+  .wireframes .section-intro {
+    max-width: none;
+    font-size: 1rem;
+    line-height: 1.75;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .wireframes-image {
+    width: 100%;
+    max-width: 420px;
+    aspect-ratio: 1 / 1;
+    align-self: center;
+  }
+
+
+  /* ==========================================
+     HAPPY CHEF — SECTION 04
+     FINAL SCREENS
+  ========================================== */
+
+  .final-screens {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .final-screens .section-heading {
+    width: min(90%, 40rem);
+    margin: 0 auto 2rem;
+  }
+
+  .final-screens .section-heading h2 {
+    font-size: clamp(3rem, 10vw, 5rem);
+    margin-bottom: 2rem;
+  }
+
+  .final-screens .section-intro {
+    width: min(90%, 35rem);
+    max-width: none;
+    margin: 1.5rem auto 3rem;
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .screens-gallery {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 1rem;
+    width: max-content;
+    padding: 0 1rem;
+  }
+
+  .screen-card {
+    width: 190px;
+    border-radius: var(--border-radius);
+  }
+
+  .screen-card.featured {
+    width: 225px;
+  }
+
+
+  /* ==========================================
+     HAPPY CHEF — SECTION 05
+     REFLECTION
+  ========================================== */
+
+  .reflection {
+    flex-direction: column;
+    width: min(90%, 40rem);
+    margin: 6rem auto;
+    gap: 3rem;
+    align-items: stretch;
+  }
+
+  .reflection-content {
+    width: 100%;
+    max-width: none;
+  }
+
+  .reflection .section-heading {
+    margin-bottom: 1.5rem;
+  }
+
+  .reflection .section-heading h2 {
+    font-size: clamp(3rem, 10vw, 5rem);
+    margin-bottom: 2rem;
+  }
+
+  .reflection .section-intro {
+    max-width: none;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .reflection-card {
+    width: 100%;
+    max-width: 420px;
+    aspect-ratio: 1 / 1;
+    align-self: center;
+    padding: 2.5rem;
+  }
+
+  .quote-mark {
+    font-size: 4rem;
+  }
+
+  .reflection-card blockquote {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+
+  .quote-author {
+    font-size: 0.9rem;
+  }
+
+  .reflection-card:hover {
+    transform: none;
+  }
+
+
+  /* ==========================================
+     HAPPY CHEF — SECTION 06
+     TRY THE APP
+  ========================================== */
+
+  .try-app {
+    flex-direction: column;
+    width: min(90%, 40rem);
+    margin: 6rem auto 8rem;
+    gap: 3rem;
+    align-items: stretch;
+  }
+
+  .try-app-image {
+    display: none;
+  }
+
+  .try-app-content {
+    width: 100%;
+    max-width: none;
+  }
+
+  .try-app .section-heading {
+    margin-bottom: 1.5rem;
+  }
+
+  .try-app .section-heading h2 {
+    font-size: clamp(3rem, 10vw, 5rem);
+    margin-bottom: 2rem;
+  }
+
+  .try-app .section-intro {
+    max-width: none;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .try-app .project-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .try-app .project-button,
+  .try-app .project-button-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+
+  /* ==========================================
+     FLORISHOP — SECTION 00
+     PROFESSIONAL HERO
+  ========================================== */
+
+  .professional-hero {
+    width: calc(100% - 2rem);
+    margin: 6rem auto 0;
+    padding: 4rem 0 3rem;
+  }
+
+  .professional-hero .section-heading {
+    gap: 0.75rem;
+  }
+
+  .professional-hero .section-number {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+  }
+
+  .professional-hero h1 {
+    font-size: clamp(3rem, 11vw, 5rem);
+    line-height: 1;
+  }
+
+  .professional-hero .section-intro {
+    width: 100%;
+    max-width: 38rem;
+    margin: 1.5rem auto 0;
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+
+
+  /* ==========================================
+     FLORISHOP — SECTION 01
+     FEATURED PROJECT
+  ========================================== */
+
+  .professional-featured {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: min(90%, 40rem);
+    gap: 3rem;
+    margin: 3rem auto 6rem;
+  }
+
+  .featured-content {
+    width: 100%;
+    max-width: none;
+    order: 1;
+  }
+
+  .project-label {
+    margin-bottom: 0.75rem;
+  }
+
+  .featured-content h2 {
+    font-size: clamp(3rem, 10vw, 5rem);
+    margin-bottom: 2rem;
+  }
+
+  .featured-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+
+  .project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  .project-meta span {
+    font-size: 0.7rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .featured-image {
+    width: 100%;
+    order: 2;
+    border-radius: var(--border-radius-xl);
+  }
+
+  .featured-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+
+  /* ==========================================
+     FLORISHOP — SECTION 02
+     MY CONTRIBUTION
+  ========================================== */
+
+  .professional-info {
+    display: flex;
+    flex-direction: column;
+    width: min(90%, 40rem);
+    gap: 4rem;
+    margin: 0 auto;
+    padding: 4rem 0;
+  }
+
+  .info-block {
+    width: 100%;
+    max-width: none;
+  }
+
+  .info-label {
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+  }
+
+  .info-block h2 {
+    font-size: clamp(2rem, 8vw, 3rem);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+
+  .info-block p {
+    font-size: 1rem;
+    line-height: 1.8;
+    max-width: none;
+  }
+
+
+  /* ==========================================
+     FLORISHOP — SECTION 03
+     PROJECT SCOPE
+  ========================================== */
+
+  .project-scope {
+    width: min(90%, 40rem);
+    margin: 6rem auto;
+  }
+
+  .project-scope .section-heading {
+    margin-bottom: 2rem;
+  }
+
+  .project-scope .section-heading h2 {
+    font-size: clamp(3rem, 10vw, 5rem);
+    margin-bottom: 2rem;
+  }
+
+  .project-scope .section-intro {
+    max-width: none;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .scope-list {
+    grid-template-columns: 1fr;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .scope-item {
+    width: 100%;
+    padding: 1.25rem 0;
+    gap: 1rem;
+  }
+
+  .scope-item span {
+    min-width: 2rem;
+    font-size: 0.75rem;
+  }
+
+  .scope-item h3 {
+    font-size: 1rem;
+  }
+
+
+  /* ==========================================
+     FLORISHOP — SECTION 03 / 04
+     SHOWCASE
+  ========================================== */
+
+  .professional-showcase {
+    width: min(90%, 40rem);
+    margin: 6rem auto;
+  }
+
+  .professional-showcase .section-heading {
+    margin-bottom: 2rem;
+  }
+
+  .professional-showcase .section-heading h2 {
+    font-size: clamp(3rem, 10vw, 5rem);
+    margin-bottom: 2rem;
+  }
+
+  .professional-showcase .section-intro {
+    max-width: none;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .showcase-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .showcase-item,
+  .showcase-item.large {
+    grid-column: auto;
+    width: 100%;
+    border-radius: var(--border-radius-xl);
+  }
+
+  .showcase-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .showcase-item:hover img {
+    transform: none;
+  }
+
+
+  /* ==========================================
+     FLORISHOP — SECTION 05
+     DELIVERY / OPLEVERING
+  ========================================== */
+
+  .professional-result {
+    width: min(90%, 40rem);
+    margin: 6rem auto;
+  }
+
+  .professional-result .section-heading {
+    margin-bottom: 2rem;
+  }
+
+  .professional-result .section-heading h2 {
+    font-size: clamp(3rem, 10vw, 5rem);
+    margin-bottom: 2rem;
+  }
+
+  .professional-result .section-intro {
+    max-width: none;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .result-image {
+    width: 100%;
+    border-radius: var(--border-radius-xl);
+    overflow: hidden;
+  }
+
+  .result-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+
+  /* ==========================================
+     FLORISHOP — SECTION 06
+     FINAL RESULT
+  ========================================== */
+
+  .professional-final {
+    width: min(90%, 40rem);
+    margin: 6rem auto 8rem;
+  }
+
+  .professional-final .section-heading {
+    margin-bottom: 2rem;
+  }
+
+  .professional-final .section-heading h2 {
+    font-size: clamp(3rem, 10vw, 5rem);
+    margin-bottom: 2rem;
+  }
+
+  .professional-final .section-intro {
+    max-width: none;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .final-project-image {
+    width: 100%;
+    border-radius: var(--border-radius-xl);
+    overflow: hidden;
+  }
+
+  .final-project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+   600px and below
+========================================== */
+
+@media (max-width: 600px) {
+
+  /* ==========================================
+     ABOUT ME
+  ========================================== */
+
+  .about-page {
+    width: calc(100% - 2rem);
+    margin: 6rem auto 3rem;
+    gap: 2.5rem;
+  }
+
+  .about-character {
+    height: 45vh;
+    max-height: 450px;
+  }
+
+  .about-content {
+    width: 100%;
+  }
+
+  .about-category {
+    font-size: 0.95rem;
+  }
+
+  .about-content h1 {
+    font-size: clamp(2.8rem, 11vw, 4rem);
+    margin-bottom: 2rem;
+  }
+
+  .about-section {
+    margin-bottom: 2rem;
+  }
+
+  .about-section h2 {
+    font-size: 0.85rem;
+  }
+
+  .about-section p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .about-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .about-buttons .project-button,
+  .about-buttons .project-button-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+
+  /* ==========================================
+     CONTACT
+  ========================================== */
+
+  .contact-page {
+    width: calc(100% - 2rem);
+    height: calc(100vh - 6rem);
+    margin: 6rem auto 3rem;
+  }
+
+  .contact-category {
+    margin-bottom: 1rem;
+    font-size: 0.7rem;
+  }
+
+  .contact-intro h1 {
+    margin-bottom: 1.75rem;
+    font-size: clamp(3.8rem, 17vw, 6rem);
+    line-height: 0.85;
+  }
+
+  .contact-intro p {
+    max-width: 32rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .contact-email {
+    margin-top: 1.25rem;
+    padding: 0.85rem 1.4rem;
+    font-size: 0.85rem;
+  }
+
+
+  /* ==========================================
+     FINAL SCREENS
+  ========================================== */
+
+  .screens-gallery {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .screen-card,
+  .screen-card.featured {
+    width: min(75vw, 280px);
+  }
+
+  .screen-card.featured {
+    order: 0;
+  }
+
+  .screen-card:hover {
+    transform: none;
+  }
+
+}
+
+
+
+
+
+/* ==========================================
+   PROJECT TOAST
+   DESKTOP + TABLET
+========================================== */
+
+.project-toast {
+  display: none;
+}
+
+
+@media (min-width: 769px) {
+
+  .project-toast {
+    position: fixed;
+
+    left: 50%;
+    bottom: 2rem;
+
+    display: flex;
+    align-items: center;
+
+    width: min(90%, 24rem);
+
+    padding: 1rem 1.25rem;
+
+    background: rgba(17, 17, 17, 0.94);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: var(--border-radius-l);
+
+    box-shadow:
+      0 1rem 3rem rgba(0, 0, 0, 0.35);
+
+    transform:
+      translate(-50%, calc(100% + 4rem));
+
+    opacity: 0;
+
+    z-index: 9999;
+
+    transition:
+      transform 0.5s ease,
+      opacity 0.5s ease;
+
+    pointer-events: none;
+  }
+
+
+  /* Toast zichtbaar */
+
+  .project-toast.show {
+    transform:
+      translate(-50%, 0);
+
+    opacity: 1;
+
+    pointer-events: auto;
+  }
+
+
+  /* ==========================================
+     CONTENT
+  ========================================== */
+
+  .toast-content {
+    flex: 1;
+  }
+
+
+  .toast-label {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: var(--color-accent);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+
+  .toast-content p {
+    margin: 0;
+    color: var(--color-white);
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+
+  /* ==========================================
+     CLOSE BUTTON
+  ========================================== */
+
+  .toast-close {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 2rem;
+    height: 2rem;
+
+    margin-left: 1rem;
+    padding: 0;
+
+    border: none;
+
+    border-radius: var(--border-radius-full);
+
+    background: rgba(255, 255, 255, 0.08);
+
+    color: rgba(255, 255, 255, 0.7);
+
+    font-family: "Open Sans", sans-serif;
+
+    font-size: 1.2rem;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+      background 0.3s ease,
+      color 0.3s ease,
+      transform 0.3s ease;
+  }
+
+
+  .toast-close:hover {
+    background: rgba(255, 255, 255, 0.15);
+
+    color: var(--color-white);
+
+    transform: scale(1.05);
+  }
+
+}

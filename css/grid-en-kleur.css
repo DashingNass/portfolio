@@ -1,0 +1,558 @@
+/* ==========================================
+   PROJECT DETAIL PAGE HAPPY CHEF
+   HERO SECTION 00
+========================================== */
+
+.project-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: min(1400px, 90%);
+  margin: 6rem auto 0;
+  min-height: calc(100vh - 6rem);
+  gap: 5rem;
+}
+
+
+/* linker kolom */
+.project-info {
+  width: 45%;
+}
+
+.project-info h1 {
+    font-size: clamp(3rem, 4vw, 4.5rem);
+}
+
+/* rechter kolom */
+.project-image {
+  width: 420px;
+  aspect-ratio: 1 / 1;
+  border-radius: 2rem;
+  border-radius: var(--border-radius-xl);
+  overflow: hidden;
+  flex-shrink: 0
+}
+
+/* Afbeelding */
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* typografie */
+.project-number {
+  display: inline-block;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--color-grid);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* titel */
+.project-info h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-white);
+  margin-bottom: 3rem;
+}
+
+/* about */
+.project-about h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--color-white);
+}
+
+/* Beschrijving */
+.project-about p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(255,255,255,.8);
+  max-width: 36;
+  margin-bottom: 2.5rem;
+}
+
+
+/* button */
+.project-button {
+    font-size: .9rem;
+  display: inline-flex;
+  align-items: center;
+  padding: .9rem 1.6rem;
+  border-radius: var(--border-radius-full);
+  background: var(--color-grid);
+  color: var(--color-black);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+.project-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* Verander dit voor meer of minder ruimte */
+}
+
+
+/* button secondary */
+.project-button-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .9rem 1.6rem;
+  font-size: .9rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-grid);
+  border: 1.5px solid var(--color-grid);
+  border-radius: var(--border-radius-full);
+  background: transparent;
+  transition:
+    background .3s ease,
+    color .3s ease,
+    transform .3s ease;
+}
+
+/* hover functie */
+.project-button-secondary:hover {
+  background: var(--color-grid);
+  color: var(--color-black);
+}
+/* ==========================================
+   MARQEE TEXT
+========================================== */
+
+/* Groene balk */
+.project-marquee {
+width: 100%;
+overflow: hidden;
+background: var(--color-grid);
+padding: 0.6rem 0;
+}
+
+
+/* tekst */
+.marquee-track span {
+  display: flex;
+  align-items: center;
+  gap: clamp(2rem, 4vw, 5rem);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+
+/* Chef-hat icon in de marquee */
+.marquee-icon {
+  width: clamp(0.8rem, 1vw, 1.2rem);
+  height: clamp(0.8rem, 1vw, 1.2rem);
+}
+
+/* de track / langzamere animatie */
+.marquee-track {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    animation: marquee 40s linear infinite;
+}
+
+/* Hover break */
+.project-marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* Animatie */
+@keyframes marquee {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* ==========================================
+   SECTION 01
+   DE UITDAGING / THE CHALLENGE 
+========================================== */
+
+.challenge {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: min(var(--container-width), 90%);
+  margin: 10rem auto;
+  gap: 8rem;
+}
+.challenge-image {
+  width: 420px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: var(--border-radius-xl);
+  flex-shrink: 0;
+}
+
+.challenge-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* challange content */
+.challenge-content {
+  max-width: 38rem;
+}
+
+/* Heading */
+.section-heading {
+  margin-bottom: 2rem;
+}
+
+
+/* title  h2*/
+.section-heading h2{
+    font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-white);
+  margin-bottom: 3rem;
+}
+
+.challenge-content p {
+  margin-top: 2rem;
+  max-width: 36rem;
+  line-height: 1.9;
+  color: rgba(255,255,255,.8);
+}
+
+
+.section-number {
+  display: block;
+  margin-bottom: .75rem;
+  color: var(--color-grid);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+
+/* ==========================================
+   SECTION 02
+   DESIGN PROCESS
+========================================== */
+
+.design-process {
+  width: min(var(--container-width), 90%);
+  margin: 10rem auto;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+
+/* Intro tekst */
+.section-intro {
+  max-width: 42rem;
+  margin-top: 2rem;
+  line-height: 1.9;
+  color: rgba(255,255,255,.8);
+  margin-bottom: 2.5rem;
+}
+
+/* Grid */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+/* Kaart */
+.process-card {
+  opacity: 1;
+  transform: translateY(0);
+
+  transition:
+    opacity .5s ease,
+    transform .5s ease;
+}
+
+/* Icoon */
+.process-icon {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  transition: color .35s ease;
+}
+
+/* Titel */
+.process-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-white);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+/* Lijn */
+.process-divider {
+  width: 100%;
+  height: 2px;
+  background: rgba(255,255,255,.15);
+  margin-bottom: 1.5rem;
+  transition: background .35s ease;
+}
+
+/* Tekst */
+.process-card p {
+  font-size: .95rem;
+  line-height: 1.8;
+  color: rgba(255,255,255,.7);
+}
+
+
+/* ==========================================
+   SECTION 03
+   WIREFRAMES
+========================================== */
+
+.wireframes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: min(var(--container-width), 90%);
+  margin: 10rem auto;
+  gap: 8rem;
+}
+
+/* Linkerkolom */
+.wireframes-content {
+  max-width: 38rem;
+}
+
+/* Rechterkolom */
+.wireframes-image {
+  width: 460px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: var(--border-radius-xl);
+  flex-shrink: 0;
+}
+
+/* Afbeelding */
+.wireframes-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================
+   SECTION 04
+   FINAL SCREENS
+========================================== */
+/* VERSIE 1 */
+/* 
+.final-screens {
+  text-align: center;
+}
+
+.final-screens .section-intro {
+  max-width: 42rem;
+  margin: 2rem auto 5rem;
+}
+
+.screens-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.screen-card {
+  width: 260px;
+
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: transform .35s ease;
+}
+
+.screen-card img {
+  width: 100%;
+  display: block;
+}
+
+.screen-card:hover {
+  transform: translateY(-8px);
+}
+
+.screen-card.featured {
+  width: 320px;
+} */
+
+
+
+
+
+/* ==========================================
+   FINAL SCREENS
+========================================== */
+/* VERSIE 2 */
+
+
+
+
+.final-screens {
+  text-align: center;
+}
+
+.final-screens .section-intro {
+  max-width: 42rem;
+  margin: 2rem auto 5rem;
+}
+
+.screens-gallery {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.screen-card {
+  width: min(100%, 1100px);
+
+  border-radius: var(--border-radius-xl);
+
+  overflow: hidden;
+
+  transition: transform 0.35s ease;
+}
+
+.screen-card img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+}
+
+.screen-card:hover {
+  transform: translateY(-8px);
+}
+
+
+/* ==========================================
+   SECTION 05
+   REFLECTION
+========================================== */
+
+
+/* Linkerkolom */
+.reflection-content {
+  max-width: 38rem;
+}
+
+
+
+/* Rechterkolom / Quote card */
+.reflection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: min(var(--container-width), 90%);
+  margin: 10rem auto;
+  gap: 8rem;
+}
+
+.reflection-card {
+  width: 420px;
+  border-radius: var(--border-radius-l);
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  flex-shrink: 0;
+  transition:
+    transform .35s ease,
+    border-color .35s ease,
+    box-shadow .35s ease;
+}
+
+.reflection-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-grid);
+  box-shadow: 0 0 24px rgba(184, 255, 59, .08);
+}
+
+/* Quote teken */
+.quote-mark {
+  font-size: 5em;
+  line-height: 1;
+  color: var(--color-grid);
+  margin-bottom: 1rem;
+}
+
+/* Quote tekst */
+.reflection-card blockquote {
+  font-size: 1.45rem;
+  line-height: 1.6;
+  color: var(--color-white);
+  font-style: normal;
+
+  margin-bottom: 2rem;
+}
+
+/* Auteur */
+.quote-author {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-grid);
+}
+
+
+/* ==========================================
+   SECTION 06
+   TRY THE APP
+========================================== */
+
+.try-app {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: min(var(--container-width), 90%);
+  margin: 10rem auto;
+  gap: 8rem; 
+  
+}
+
+/* Linkerkolom */
+.try-app-image {
+  width: 420px;
+  aspect-ratio: 1 / 1;
+
+  overflow: hidden;
+  border-radius: var(--border-radius-xl);
+  flex-shrink: 0;
+}
+
+.try-app-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .35s ease;
+}
+
+
+/* Rechterkolom */
+.try-app-content {
+  max-width: 38rem;
+}
