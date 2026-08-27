@@ -19,13 +19,13 @@ if (projectToast) {
 
     if (isTouchDevice) {
 
-        // This message will be visible on tablet
+      // This message will be visible on tablet
       toastMessage.textContent =
         "Tik op de afbeelding om een project te bekijken.";
 
     } else {
-        
-        // This message will be visible on desktop
+
+      // This message will be visible on desktop
       toastMessage.textContent =
         "Hover om te ontdekken.";
 
@@ -74,3 +74,27 @@ if (projectToast) {
   }
 
 }
+
+
+/* ==========================================
+   IMAGE PROTECTION
+========================================== */
+
+// Disable right-click on images only
+document.addEventListener("contextmenu", function (event) {
+
+  if (event.target.tagName === "IMG") {
+    event.preventDefault();
+  }
+
+});
+
+
+// Prevent images from being dragged
+document.addEventListener("dragstart", function (event) {
+
+  if (event.target.tagName === "IMG") {
+    event.preventDefault();
+  }
+
+});
