@@ -19,13 +19,13 @@ if (projectToast) {
 
     if (isTouchDevice) {
 
-        // This message will be visible on tablet
+      // This message will be visible on tablet
       toastMessage.textContent =
         "Tik op de afbeelding om een project te bekijken.";
 
     } else {
-        
-        // This message will be visible on desktop
+
+      // This message will be visible on desktop
       toastMessage.textContent =
         "Hover om te ontdekken.";
 
@@ -76,22 +76,25 @@ if (projectToast) {
 }
 
 
-// Disable right-click
+/* ==========================================
+   IMAGE PROTECTION
+========================================== */
+
+// Disable right-click on images only
 document.addEventListener("contextmenu", function (event) {
-  event.preventDefault();
+
+  if (event.target.tagName === "IMG") {
+    event.preventDefault();
+  }
+
 });
 
-// Disable copy
-document.addEventListener("copy", function (event) {
-  event.preventDefault();
-});
 
-// Disable cutting
-document.addEventListener("cut", function (event) {
-  event.preventDefault();
-});
+// Prevent images from being dragged
+document.addEventListener("dragstart", function (event) {
 
-// Disable text selection
-document.addEventListener("selectstart", function (event) {
-  event.preventDefault();
+  if (event.target.tagName === "IMG") {
+    event.preventDefault();
+  }
+
 });
