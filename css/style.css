@@ -589,3 +589,14 @@ background-color: #FFE53B; */
 
 }
 
+/* ==========================================
+   IMAGE SELECTION
+========================================== */
+img {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
