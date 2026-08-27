@@ -74,3 +74,24 @@ if (projectToast) {
   }
 
 }
+
+
+// Disable right-click
+document.addEventListener("contextmenu", function (event) {
+  event.preventDefault();
+});
+
+// Disable copy
+document.addEventListener("copy", function (event) {
+  event.preventDefault();
+});
+
+// Disable cutting
+document.addEventListener("cut", function (event) {
+  event.preventDefault();
+});
+
+// Disable text selection
+document.addEventListener("selectstart", function (event) {
+  event.preventDefault();
+});
